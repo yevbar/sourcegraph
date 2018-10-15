@@ -71,7 +71,7 @@ This scope is useful when building Sourcegraph integrations with external servic
 
 ## Examples
 
-See ["Sourcegraph API examples](/api/graphql/examples.md)".
+See ["Sourcegraph GraphQL API examples](examples.md)".
 
 ### Using the API via the Sourcegraph CLI
 

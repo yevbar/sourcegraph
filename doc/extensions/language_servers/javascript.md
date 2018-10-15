@@ -1,6 +1,6 @@
 # JavaScript: code intelligence configuration
 
-To enable JavaScript code intelligence, see the [installation documentation](/extensions/language_servers/install/index.md).
+To enable JavaScript code intelligence, see the [installation documentation](install/index.md).
 
 JavaScript is a dynamic language with many common patterns that are difficult to analyze statically. For best results:
 

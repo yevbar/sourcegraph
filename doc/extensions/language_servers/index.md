@@ -12,8 +12,8 @@ Code intelligence is provided by language servers that run securely in your self
 By spinning up Sourcegraph, you can get code intelligence:
 
 - On the Sourcegraph web interface
-- On code files on your code host, via our [integrations](/integration.md)
-- On diffs in your code review tool, via our [integrations](/integration.md)
+- On code files on your code host, via our [integrations](../../integration/index.md)
+- On diffs in your code review tool, via our [integrations](../../integration/index.md)
 - Via the Sourcegraph API (for programmatic access)
 
 <div class="code-intel-images">
@@ -76,26 +76,26 @@ By spinning up Sourcegraph, you can get code intelligence:
 
 Sourcegraph's code intelligence supports code written in the following programming languages:
 
-- [Go](/extensions/language_servers/go.md)
-- [JavaScript](/extensions/language_servers/javascript.md)
-- [TypeScript](/extensions/language_servers/typescript.md)
-- [Python](/extensions/language_servers/python.md)
-- [Java](/extensions/language_servers/java.md)
-- [PHP](/extensions/language_servers/php.md)
-- [Bash](/extensions/language_servers/experimental_language_servers.md)
-- [Clojure](/extensions/language_servers/experimental_language_servers.md)
-- [C++](/extensions/language_servers/experimental_language_servers.md)
-- [C#](/extensions/language_servers/experimental_language_servers.md)
-- [CSS](/extensions/language_servers/experimental_language_servers.md)
-- [Dockerfile](/extensions/language_servers/experimental_language_servers.md)
-- [Elixir](/extensions/language_servers/experimental_language_servers.md)
-- [HTML](/extensions/language_servers/experimental_language_servers.md)
-- [Lua](/extensions/language_servers/experimental_language_servers.md)
-- [OCaml](/extensions/language_servers/experimental_language_servers.md)
-- [R](/extensions/language_servers/experimental_language_servers.md)
-- [Ruby](/extensions/language_servers/experimental_language_servers.md)
-- [Rust](/extensions/language_servers/experimental_language_servers.md)
-- [Swift](/extensions/language_servers/swift.md)
+- [Go](go.md)
+- [JavaScript](javascript.md)
+- [TypeScript](typescript.md)
+- [Python](python.md)
+- [Java](java.md)
+- [PHP](php.md)
+- [Bash](experimental_language_servers.md)
+- [Clojure](experimental_language_servers.md)
+- [C++](experimental_language_servers.md)
+- [C#](experimental_language_servers.md)
+- [CSS](experimental_language_servers.md)
+- [Dockerfile](experimental_language_servers.md)
+- [Elixir](experimental_language_servers.md)
+- [HTML](experimental_language_servers.md)
+- [Lua](experimental_language_servers.md)
+- [OCaml](experimental_language_servers.md)
+- [R](experimental_language_servers.md)
+- [Ruby](experimental_language_servers.md)
+- [Rust](experimental_language_servers.md)
+- [Swift](swift.md)
 
 Interested in a language that's not listed here? Post or subscribe to an issue for the language on the [Sourcegraph issue tracker](https://github.com/sourcegraph/issues/issues). [Contact us](https://about.sourcegraph.com/contact) if your organization would like to expedite development of a particular language.
 
@@ -107,13 +107,13 @@ Hundreds of thousands of developers already use Sourcegraph's language servers i
 
 For more information about the Language Server Protocol (LSP), visit [Microsoft's official LSP site](https://microsoft.github.io/language-server-protocol/). For a more detailed list of existing language servers, visit [langserver.org](https://langserver.org) (maintained by Sourcegraph).
 
-If you're a language server developer, see [documentation on adapting a language server to work with Sourcegraph](/extensions/language_servers/adapting_existing_language_servers.md).
+If you're a language server developer, see [documentation on adapting a language server to work with Sourcegraph](adapting_existing_language_servers.md).
 
 ---
 
 ## Getting started
 
-- [Set up code intelligence on Sourcegraph (for single-node `sourcegraph/server` deployments)](/extensions/language_servers/install/index.md)
-- [Set up code intelligence on Sourcegraph (for Kubernetes cluster deployments)](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/install.md#add-language-servers-for-code-intelligence)
+- [Set up code intelligence (for single-node `sourcegraph/server` deployments)](install/index.md)
+- [Set up code intelligence (for Kubernetes cluster deployments)](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/install.md#add-language-servers-for-code-intelligence)
 
 Interested in trying it out on public code? See [this sample file](https://sourcegraph.com/github.com/dgrijalva/jwt-go/-/blob/token.go#L37:6$references) on Sourcegraph.com.

@@ -6,7 +6,7 @@
 
 Sourcegraph supports automatically syncing repositories from [Bitbucket Server](https://www.atlassian.com/software/bitbucket/server). To add repositories associated with a Bitbucket Server user:
 
-1.  Go to the [site configuration editor](/admin/site_config/index.md).
+1.  Go to the [site configuration editor](../admin/site_config/index.md).
 2.  Press **Add Bitbucket Server projects**.
 3.  Fill in the fields in the generated `bitbucketServer` configuration option.
 
@@ -35,7 +35,7 @@ The Sourcegraph browser extension will add **go-to-definition**, **find-referenc
 
     <img src="img/BitbucketURL.png" style="border: 1px solid red"/>
 
-3.  [Update Sourcegraph site configuration](/admin/site_config/index.md) to allow scripts on your Bitbucket Server instance to communicate with your Sourcegraph instance:
+3.  [Update Sourcegraph site configuration](../admin/site_config/index.md) to allow scripts on your Bitbucket Server instance to communicate with your Sourcegraph instance:
 
     ```json
     {
@@ -45,4 +45,4 @@ The Sourcegraph browser extension will add **go-to-definition**, **find-referenc
     }
     ```
 
-You're done! You'll now get go-to-definition, find-references, hover tooltips, and code search on Bitbucket Server. Proceed to [install with G Suite](/integration/browser_extension.md#automatically-install-with-g-suite) when you're ready to roll it out to all users.
+You're done! You'll now get go-to-definition, find-references, hover tooltips, and code search on Bitbucket Server. Proceed to [install with G Suite](browser_extension.md#automatically-install-with-g-suite) when you're ready to roll it out to all users.

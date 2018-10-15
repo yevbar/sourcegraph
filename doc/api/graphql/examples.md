@@ -1,6 +1,6 @@
 # Sourcegraph GraphQL API examples
 
-This page demonstrates a few example GraphQL queries for the [Sourcegraph GraphQL API](.).
+This page demonstrates a few example GraphQL queries for the [Sourcegraph GraphQL API](index.md).
 
 <table class="table" style="table-layout: fixed">
 	<tr>

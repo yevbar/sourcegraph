@@ -1,10 +1,10 @@
-# Installing code intelligence on Sourcegraph manually
+# Installing code intelligence manually
 
-These instructions walk you through adding [code intelligence](/extensions/language_servers.md) to Sourcegraph Server manually.
+These instructions walk you through adding [code intelligence](../index.md) to Sourcegraph Server manually.
 
-**Most users will never need to follow these steps, and instead should rely on the [default automatic installation](/extensions/language_servers/install/index.md).**
+> NOTE: Most users will never need to follow these steps, and instead should rely on the [default automatic installation](index.md).
 
-For more information, see "[Installing code intelligence on Sourcegraph](/extensions/language_servers/install/index.md)".
+For more information, see "[Installing code intelligence](index.md)".
 
 ## Manual installation
 
@@ -20,11 +20,11 @@ docker network create --driver bridge lsp
 
 ### Stop the sourcegraph/server container
 
-If you're already running the `sourcegraph/server` Docker image (as described in the [quickstart](/admin/install).md), kill it now (with `Ctrl+C` or `docker rm`). Your data and configuration is preserved on the volumes, and you'll start the server again in the next step.
+If you're already running the `sourcegraph/server` Docker image (as described in the [quickstart](../../../admin/install.md), kill it now (with `Ctrl+C` or `docker rm`). Your data and configuration is preserved on the volumes, and you'll start the server again in the next step.
 
 ### Run the sourcegraph/server container with the network
 
-Now, run the `sourcegraph/server` Docker image as described in the [quickstart](/admin/install.md), but with two additional flags: `--network=lsp` and `--name=sourcegraph`:
+Now, run the `sourcegraph/server` Docker image as described in the [quickstart](../../../admin/install.md), but with two additional flags: `--network=lsp` and `--name=sourcegraph`:
 
 ```shell
 docker run \
@@ -84,7 +84,7 @@ docker run --rm --network=lsp --name=php sourcegraph/codeintel-php
 
 ### Configure Sourcegraph to connect to the language servers
 
-Finally, configure Sourcegraph to use these language servers. In [site configuration](/admin/site_config/index.md), set the `langservers` field to the appropriate languages and addresses of the running servers.
+Finally, configure Sourcegraph to use these language servers. In [site configuration](../../../admin/site_config/index.md), set the `langservers` field to the appropriate languages and addresses of the running servers.
 
 If you followed the instructions above, the addresses and port numbers for all language servers are shown below. In your configuration, only include the entries for the language servers you're actually running.
 
@@ -125,4 +125,4 @@ If you followed the instructions above, the addresses and port numbers for all l
 
 ## Next steps
 
-To get code intelligence on your code host and/or code review tool, follow the instructions in our [integrations documentation](/integration.md).
+To get code intelligence on your code host and/or code review tool, see the [browser extension documentation](../../../integration/browser_extension).

@@ -21,7 +21,7 @@ When Sourcegraph is ready, continue at http://localhost:7080.
 
 After creating an account, go to the **Configuration** page in the site admin area.
 
-Click **Add GitHub.com repositories** to add all repositories associated with your GitHub.com account, or see [how to add repositories from other code hosts](/admin/repo/add).
+Click **Add GitHub.com repositories** to add all repositories associated with your GitHub.com account, or see [how to add repositories from other code hosts](../../repo/add.md).
 
 ## Step 3: Start searching your code
 
@@ -29,11 +29,11 @@ Click **Add GitHub.com repositories** to add all repositories associated with yo
 
 ## Next steps
 
-- [Configure your Sourcegraph instance](/admin/site_config/index.md)
-- [Configure code intelligence](/extensions/language_servers.md)
-- [Deploy Sourcegraph on AWS](/admin/install/docker/aws.md)
-- [Deploy Sourcegraph on Google Cloud Platform](/admin/install/docker/google_cloud)
-- [Deploy Sourcegraph on Digital Ocean](/admin/install/docker/digitalocean.md)
+- [Configure your Sourcegraph instance](../../site_config/index.md)
+- [Configure code intelligence](../../../extensions/language_servers/index.md)
+- [Deploy Sourcegraph on AWS](../../install/docker/aws.md)
+- [Deploy Sourcegraph on Google Cloud Platform](../../install/docker/google_cloud)
+- [Deploy Sourcegraph on Digital Ocean](../../install/docker/digitalocean.md)
 
 ## File system performance on Docker for Mac
 
@@ -41,7 +41,7 @@ There is a [known issue](https://github.com/docker/for-mac/issues/77) in Docker 
 
 To achieve better performance, you can do any of the following:
 
-- For better clone performance, clone the repository on your host machine and then [add it to Sourcegraph Server](/admin/repo/add#add-repositories-already-cloned-to-disk).
+- For better clone performance, clone the repository on your host machine and then [add it to Sourcegraph Server](../../repo/add#add-repositories-already-cloned-to-disk).
 - Try adding the `:delegated` suffix the data volume mount. [Learn more](https://github.com/docker/for-mac/issues/1592).
   ```
   --volume ~/.sourcegraph/data:/var/opt/sourcegraph:delegated

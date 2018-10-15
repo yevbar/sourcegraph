@@ -1,6 +1,6 @@
 # Python: code intelligence configuration
 
-This page describes additional configuration that may be needed for Python code intelligence on certain codebases. To enable Python code intelligence, see the [installation documentation](/extensions/language_servers/install/index.md).
+This page describes additional configuration that may be needed for Python code intelligence on certain codebases. To enable Python code intelligence, see the [installation documentation](install/index.md).
 
 ---
 
