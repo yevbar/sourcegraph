@@ -25,101 +25,48 @@ is documented.
 
 ## Documentation structure
 
-Follow through the [documentation structure guide](structure.md) for learning
-how to structure Sourcegraph docs.
+Follow through the [documentation structure guide](structure.md) for learning how to structure
+Sourcegraph docs.
 
 ## Documentation directory structure
 
-<!-- TODO(sqs): continue customizing below here -->
+The documentation is organized into the following top-level directories:
 
-The documentation is structured based on the Sourcegraph UI structure itself,
-separated by [`user`](https://github.com/sourcegraph/sourcegraph/tree/master/doc/user),
-[`administrator`](https://github.com/sourcegraph/sourcegraph/tree/master/doc/administration), and [`contributor`](https://github.com/sourcegraph/sourcegraph/tree/master/doc/development).
+- [`user`](https://github.com/sourcegraph/sourcegraph/tree/master/doc/user) for users
+- [`admin`](https://github.com/sourcegraph/sourcegraph/tree/master/doc/admin) for site admins
+- [`extensions`](https://github.com/sourcegraph/sourcegraph/tree/master/doc/extensions) for Sourcegraph extensions
+- [`integration`](https://github.com/sourcegraph/sourcegraph/tree/master/doc/integration) for integrations with other products
+- [`api`](https://github.com/sourcegraph/sourcegraph/tree/master/doc/dev) for the Sourcegraph GraphQL API
+- [`dev`](https://github.com/sourcegraph/sourcegraph/tree/master/doc/dev) for contributors
 
-In order to have a [solid site structure](https://searchengineland.com/seo-benefits-developing-solid-site-structure-277456) for our documentation,
-all docs should be linked. Every new document should be cross-linked to its related documentation, and linked from its topic-related index, when existent.
-
-The directories `/workflow/`, `/gitlab-basics/`, `/university/`, and `/articles/` have
-been **deprecated** and the majority their docs have been moved to their correct location
-in small iterations. Please don't create new docs in these folders.
+There is no global index or nav, so all docs should be linked from their parent index page. Every new document should be cross-linked to its related documentation, and linked from its topic-related index, when it exists.
 
 ### Documentation files
 
-- When you create a new directory, always start with an `index.md` file.
-Do not use another file name and **do not** create `README.md` files
-- **Do not** use special chars and spaces, or capital letters in file names,
-directory names, branch names, and anything that generates a path.
+- When you create a new directory, always start with an `index.md` file. Do not use another file name and **do not** create `README.md` files
+- **Do not** use special chars and spaces, or capital letters in file names, directory names, branch names, and anything that generates a path.
 - Max screenshot size: 100KB
 - We do not support videos (yet)
-
-### Location and naming documents
-
-The documentation hierarchy can be vastly improved by providing a better layout
-and organization of directories.
-
-Having a structured document layout, we will be able to have meaningful URLs
-like `docs.gitlab.com/user/project/merge_requests/index.html`. With this pattern,
-you can immediately tell that you are navigating a user related documentation
-and is about the project and its pull requests.
-
-Do not create summaries of similar types of content (e.g. an index of all articles, videos, etc.),
-rather organize content by its subject (e.g. everything related to CI goes together)
-and cross-link between any related content.
-
-The table below shows what kind of documentation goes where.
-
-| Directory | What belongs here |
-| --------- | -------------- |
-| `doc/user/` | User related documentation. Anything that can be done within the Sourcegraph UI goes here including `/admin`. |
-| `doc/administration/`  | Documentation that requires the user to have access to the server where Sourcegraph is installed. The admin settings that can be accessed via Sourcegraph's interface go under `doc/user/admin_area/`. |
-| `doc/api/` | API related documentation. |
-| `doc/development/` | Documentation related to the development of Sourcegraph. Any styleguides should go here. |
-| `doc/legal/` | Legal documents about contributing to Sourcegraph. |
-| `doc/install/`| Probably the most visited directory, since `installation.md` is there. Ideally this should go under `doc/administration/`, but it's best to leave it as-is in order to avoid confusion (still debated though). |
-| `doc/update/` | Same with `doc/install/`. Should be under `administration/`, but this is a well known location, better leave as-is, at least for now. |
-| `doc/topics/` | Indexes per Topic (`doc/topics/topic-name/index.md`): all resources for that topic (user and admin documentation, articles, and third-party docs) |
 
 ---
 
 **General rules & best practices:**
 
-1. The correct naming and location of a new document, is a combination
-   of the relative URL of the document in question and the Sourcegraph Map design
-   that is used for UX purposes ([source][graffle], [image][gitlab-map]).
-1. When creating a new document and it has more than one word in its name,
-   make sure to use underscores instead of spaces or dashes (`-`). For example,
-   a proper naming would be `import_projects_from_github.md`. The same rule
-   applies to images.
-1. Start a new directory with an `index.md` file.
-1. There are four main directories, `user`, `administration`, `api` and `development`.
-1. The `doc/user/` directory has five main subdirectories: `project/`, `group/`,
-   `profile/`, `dashboard/` and `admin_area/`.
-   1. `doc/user/project/` should contain all project related documentation.
-   1. `doc/user/group/` should contain all group related documentation.
-   1. `doc/user/profile/` should contain all profile related documentation.
-      Every page you would navigate under `/profile` should have its own document,
-      i.e. `account.md`, `applications.md`, `emails.md`, etc.
-   1. `doc/user/dashboard/` should contain all dashboard related documentation.
-   1. `doc/user/admin_area/` should contain all admin related documentation
-      describing what can be achieved by accessing Sourcegraph's admin interface
-      (_not to be confused with `doc/administration` where server access is
-      required_).
-      1. Every category under `/admin/application_settings` should have its
-         own document located at `doc/user/admin_area/settings/`. For example,
-         the **Visibility and Access Controls** category should have a document
-         located at `doc/user/admin_area/settings/visibility_and_access_controls.md`.
-1. The `doc/topics/` directory holds topic-related technical content. Create
-   `doc/topics/topic-name/subtopic-name/index.md` when subtopics become necessary.
-   General user- and admin- related documentation, should be placed accordingly.
+- When creating a new document and it has more than one word in its name,
+  use underscores instead of spaces or dashes (`-`). For example,
+  a proper naming would be `import_projects_from_github.md`. The same rule
+  applies to images.
+- Always cross-link to `.md` files, including the file extension, so that the docs are browseable as-is (e.g., in GitHub's file browser).
+- Start a new directory with an `index.md` file.
 
-If you are unsure where a document should live, you can ping `@axil` or `@marcia` in your
+If you are unsure where a document should live, you can mention `@ryan-blunden` or `@sqs` in your
 pull request.
 
 ### Changing document location
 
 Changing a document's location is not to be taken lightly. Remember that the
-documentation is available to all installations under `help/` and not only to
-Sourcegraph.com or http://docs.gitlab.com. Make sure this is discussed with the
+documentation is available to all installations under `/help` and not only to
+Sourcegraph.com or http://docs.sourcegraph.com. Make sure this is discussed with the
 Documentation team beforehand.
 
 If you indeed need to change a document's location, do NOT remove the old
@@ -133,82 +80,21 @@ where `path/to/new_doc.md` is the relative path to the root directory `doc/`.
 
 ---
 
-For example, if you were to move `doc/workflow/lfs/lfs_administration.md` to
-`doc/administration/lfs.md`, then the steps would be:
+For example, if you were to move `doc/user/search/queries.md` to
+`doc/user/search/query_syntax.md`, then the steps would be:
 
-1. Copy `doc/workflow/lfs/lfs_administration.md` to `doc/administration/lfs.md`
-1. Replace the contents of `doc/workflow/lfs/lfs_administration.md` with:
+1. Copy `doc/user/search/queries.md` to `doc/user/search/query_syntax.md`
+1. Replace the contents of `doc/user/search/queries.md` with:
 
     ```
-    This document was moved to [another location](../../administration/lfs.md).
+    This document was moved to [another location](query_syntax.md).
     ```
-
 1. Find and replace any occurrences of the old location with the new one.
-   A quick way to find them is to use `git grep`. First go to the root directory
-   where you cloned the `gitlab-ce` repository and then do:
-
-    ```
-    git grep -n "workflow/lfs/lfs_administration"
-    git grep -n "lfs/lfs_administration"
-    ```
-
-NOTE: **Note:**
-If the document being moved has any Disqus comments on it, there are extra steps
-to follow documented just [below](#redirections-for-pages-with-disqus-comments).
-
-Things to note:
-
-- Since we also use inline documentation, except for the documentation itself,
-  the document might also be referenced in the views of Sourcegraph (`app/`) which will
-  render when visiting `/help`, and sometimes in the testing suite (`spec/`).
-- The above `git grep` command will search recursively in the directory you run
-  it in for `workflow/lfs/lfs_administration` and `lfs/lfs_administration`
-  and will print the file and the line where this file is mentioned.
-  You may ask why the two greps. Since we use relative paths to link to
-  documentation, sometimes it might be useful to search a path deeper.
-- The `*.md` extension is not used when a document is linked to Sourcegraph's
-  built-in help page, that's why we omit it in `git grep`.
-- Use the checklist on the "Change documentation location" PR description template.
-
-#### Alternative redirection method
-
-Alternatively to the method described above, you can simply replace the content
-of the old file with a frontmatter containing a redirect link:
-
-```yaml
----
-redirect_to: '../path/to/file/README.md'
----
-```
-
-It supports both full and relative URLs, e.g. `https://docs.gitlab.com/ee/path/to/file.html`, `../path/to/file.html`, `path/to/file.md`. Note that any `*.md` paths will be compiled to `*.html`.
-
-### Redirections for pages with Disqus comments
-
-If the documentation page being relocated already has any Disqus comments,
-we need to preserve the Disqus thread.
-
-Disqus uses an identifier per page, and for docs.gitlab.com, the page identifier
-is configured to be the page URL. Therefore, when we change the document location,
-we need to preserve the old URL as the same Disqus identifier.
-
-To do that, add to the frontmatter the variable `redirect_from`,
-using the old URL as value. For example, let's say I moved the document
-available under `https://docs.gitlab.com/my-old-location/README.html` to a new location,
-`https://docs.gitlab.com/my-new-location/index.html`.
-
-Into the **new document** frontmatter add the following:
-
-```yaml
----
-redirect_from: 'https://docs.gitlab.com/my-old-location/README.html'
----
-```
-
-Note: it is necessary to include the file name in the `redirect_from` URL,
-even if it's `index.html` or `README.html`.
 
 ## Linting
+
+ <!-- TODO(sqs): continue customizing below here -->
+
 
 To help adhere to the [documentation style guidelines](styleguide.md), and to improve the content
  added to documentation, consider locally installing and running documentation linters. This will
