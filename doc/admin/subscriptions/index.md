@@ -1,10 +1,6 @@
 # Paid subscriptions for Sourcegraph Enterprise
 
-<div class="alert alert-info">
-
-Sourcegraph is [open source](https://github.com/sourcegraph/sourcegraph). Pricing documentation below applies to [Sourcegraph Enterprise](https://about.sourcegraph.com/pricing).
-
-</div>
+> NOTE: Sourcegraph is [open source](https://github.com/sourcegraph/sourcegraph). Pricing documentation below applies to [Sourcegraph Enterprise](https://about.sourcegraph.com/pricing).
 
 Organizations using Sourcegraph can [upgrade to Sourcegraph Enterprise](https://about.sourcegraph.com/pricing) to get the features that large organizations need (single sign-on, backups and recovery, cluster deployment, etc.). These additional features in Sourcegraph Enterprise are paid and not open source.
 
@@ -21,4 +17,4 @@ If you want to prevent the retroactive charge, you can upgrade your license to c
 See your license status any time by clicking **Admin** in the top right of any page, and going to **License** in the left side menu. (The URL is `https://sourcegraph.example.com/site-admin/license`.)
 
 Example Sourcegraph Enterprise license status:
-![True up pricing summary example](./img/true-up-pricing-summary.png)
+![True up pricing summary example](img/true-up-pricing-summary.png)

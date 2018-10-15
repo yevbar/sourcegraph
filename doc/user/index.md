@@ -19,7 +19,7 @@ Welcome to Sourcegraph! As a developer, you can use Sourcegraph to get help whil
 
 All features:
 
-- [Usage statistics](./usage_statistics)
+- [Usage statistics](usage_statistics)
 
 ## What is Sourcegraph?
 
@@ -90,7 +90,7 @@ Sourcegraph gives you code intelligence in:
 
 - **code files on your code host**, via [integrations](/integration)
 
-![GitHub file integration](./img/GitHubFile.png)
+![GitHub file integration](img/GitHubFile.png)
 
 Read the [code intelligence documentation](/extensions/language_servers) to learn more or [set up code intelligence](/extensions/language_servers/install).
 

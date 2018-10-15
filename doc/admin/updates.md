@@ -1,10 +1,6 @@
 # Updating Sourcegraph
 
-<div class="alert alert-info">
-
-This documentation is for Sourcegraph Server. For Sourcegraph Data Center, see "[Updating Sourcegraph Data Center](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/update.md)".
-
-</div>
+> NOTE: This documentation is for Sourcegraph Server. For Sourcegraph Data Center, see "[Updating Sourcegraph Data Center](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/update.md)".
 
 A new version of Sourcegraph is released every month (with patch releases in between, released as needed). Check the [Sourcegraph blog](https://about.sourcegraph.com/blog) or the site admin updates page to learn about updates.
 

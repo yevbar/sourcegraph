@@ -1,28 +1,29 @@
 # Sourcegraph documentation
 
-Welcome to Sourcegraph, a code search and browsing tool with code intelligence that helps developers write and review code. Learn more about Sourcegraph at [about.sourcegraph.com](https://about.sourcegraph.com).
+Sourcegraph, a code search and browsing tool with code intelligence that helps developers write and review code. Learn more about Sourcegraph at [about.sourcegraph.com](https://about.sourcegraph.com).
 
 Sourcegraph development is open source at [github.com/sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph). If these docs don't solve your problem, check the [issue tracker](https://github.com/sourcegraph/sourcegraph/issues) or the [latest documentation](https://about.sourcegraph.com/docs).
 
 
 ## For users
 
-The [user documentation](./user) is about how to use Sourcegraph. The most read docs are:
+The [user documentation](user) is about how to use Sourcegraph. The most read docs are:
 
-- [Overview](./user): What is Sourcegraph?
-- [Tour](./user/tour): A walkthrough of Sourcegraph's features, with real-world example use cases.
-- [Code search](./user/search)
+- [Overview](user): What is Sourcegraph?
+- [Tour](user/tour): A walkthrough of Sourcegraph's features, with real-world example use cases.
+- [Code search](user/search)
 - [Code browsing](#TODO)
 - [Code review](#TODO)
-- [GraphQL API](./api/graphql)
+- [Integrations](integration)
+- [GraphQL API](api/graphql)
 
 ## For site administrators
 
-The [site administration documentation](./admin) is about deploying and managing a Sourcegraph self-hosted instance.
+The [site administration documentation](admin) is about deploying and managing a Sourcegraph self-hosted instance.
 
 ## For contributors to Sourcegraph
 
-Sourcegraph development is open source at [github.com/sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph) (Apache License 2.0).
+See the [contributor documentation](dev) and the [main Sourcegraph repository](https://github.com/sourcegraph/sourcegraph) (open-source).
 
 ## Sourcegraph subscriptions
 

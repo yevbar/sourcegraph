@@ -4,4 +4,4 @@ Repositories are a core concept in Sourcegraph. All code that is searchable and 
 
 Features:
 
-- [Repository webhooks](./webhooks)
+- [Repository webhooks](webhooks)

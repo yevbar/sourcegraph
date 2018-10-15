@@ -6,11 +6,14 @@
 
 ## Step 1: Run Sourcegraph
 
-<div id="docker-command-docs">
-
-<pre class="pre-wrap"><code>docker run<span class="virtual-br"></span> --publish 7080:7080 --rm<span class="virtual-br"></span> --volume ~/.sourcegraph/config:/etc/sourcegraph<span class="virtual-br"></span> --volume ~/.sourcegraph/data:/var/opt/sourcegraph<span class="virtual-br"></span> --volume /var/run/docker.sock:/var/run/docker.sock <span class="virtual-br"></span>sourcegraph/server:<server-version-number /><span class="virtual-br"></span></code></pre>
-
-</div>
+```
+docker run \
+  --publish 7080:7080 --rm \
+  --volume ~/.sourcegraph/config:/etc/sourcegraph \
+  --volume ~/.sourcegraph/data:/var/opt/sourcegraph \
+  --volume /var/run/docker.sock:/var/run/docker.sock \
+  sourcegraph/server:VERSION
+```
 
 When Sourcegraph is ready, continue at http://localhost:7080.
 

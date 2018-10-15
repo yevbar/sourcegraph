@@ -33,7 +33,7 @@ The Sourcegraph browser extension will add **go-to-definition**, **find-referenc
 1.  Install the Sourcegraph browser extension for [Chrome](https://chrome.google.com/webstore/detail/sourcegraph/dgjhfomjieaadpoljlnidmbgkdffpack) or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/sourcegraph/).
 2.  Add your Sourcegraph URL and Bitbucket Server URL to the options menu as shown below.
 
-    <img src="./img/BitbucketURL.png" style="border: 1px solid red"/>
+    <img src="img/BitbucketURL.png" style="border: 1px solid red"/>
 
 3.  [Update Sourcegraph site configuration](/admin/site_config) to allow scripts on your Bitbucket Server instance to communicate with your Sourcegraph instance:
 

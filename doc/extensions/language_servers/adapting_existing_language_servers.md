@@ -1,10 +1,6 @@
 # Adapting an existing language server for use with Sourcegraph'
 
-<div class="alert alert-info">
-
 This documentation page is intended for language server developers who are adapting an existing language server (or building a new language server) to provide code intelligence on Sourcegraph.
-
-</div>
 
 Sourcegraph provides [code intelligence](/extensions/language_servers) by communicating with language servers that adhere to the Language Server Protocol standard, plus a few additional protocol extensions and requirements. These additional requirements are necessary because unlike in the common case where language servers are used for local code editing, language servers running inside Sourcegraph don't have access to the developer's existing repository checkout on their machine.
 

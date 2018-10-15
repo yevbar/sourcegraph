@@ -8,15 +8,16 @@ Enterprise, GitLab, Phabricator, and Bitbucket Server.
 
     <div id="integrations-btns" class="btn-group">
 
+    <!-- TODO!(sqs): fix buttons -->
     <a target="_blank" href="https://chrome.google.com/webstore/detail/sourcegraph/dgjhfomjieaadpoljlnidmbgkdffpack">
     <button class="btn btn-outline-primary align-items-center">
-        <img src="./img/chrome.svg"/>Chrome
+        <img src="img/chrome.svg"/>Chrome
     </button>
     </a>
     <span>&nbsp;</span>
     <a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/sourcegraph/">
     <button class="btn btn-outline-primary align-items-center">
-        <img src="./img/firefox.svg"/>Firefox
+        <img src="img/firefox.svg"/>Firefox
     </button>
     </a>
 
@@ -28,7 +29,7 @@ Enterprise, GitLab, Phabricator, and Bitbucket Server.
 
     2.  Configure the extension (see below) to connect to your Sourcegraph instance and code hosts. <!-- TODO!(sqs): clean this up -->
 
-<img src="./img/GitHubCodeReview.gif" style="margin-left:0;margin-right:0;"/>
+<img src="img/GitHubCodeReview.gif" style="margin-left:0;margin-right:0;"/>
 
 ## Features
 
@@ -59,7 +60,7 @@ Browser extension configuration:
 
 1.  Click the Sourcegraph extension icon to open the settings panel. Then, fill in the Sourcegraph Server URL field with your Sourcegraph URL and hit **+ Add**, and fill in the Code Host URL field with your private code host's URL and hit **+ Add**.
 
-<img src="./img/SourcegraphExtensionConfiguration.png" style="border: 1px solid red"/>
+<img src="img/SourcegraphExtensionConfiguration.png" style="border: 1px solid red"/>
 
 2.  [Update your Sourcegraph instance's site configuration](/admin/site_config) to allow the extension to communicate with it:
 
@@ -91,4 +92,4 @@ Click the Sourcegraph extension icon in your browser's toolbar to open the exten
 2.  Press <kbd>Tab</kbd> (Chrome) or <kbd>Space</kbd> (Firefox).
 3.  Type <kbd>:</kbd> as the first letter of your search query and follow the prompts in the search suggestions.
 
-<img src="./img/AddressBarConfiguration.png" style="border: 1px solid red"/>
+<img src="img/AddressBarConfiguration.png" style="border: 1px solid red"/>

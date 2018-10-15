@@ -2,11 +2,7 @@
 
 The Sourcegraph GraphQL API is a rich API that exposes data related to the code available on a Sourcegraph instance.
 
-<div class="alert alert-info">
-
-The API is under active development so it may change in backward incompatible ways. These types of changes will be documented in our changelog.
-
-</div>
+> NOTE: The API is under active development so it may change in backward incompatible ways. These types of changes will be documented in our changelog.
 
 # API overview
 
@@ -25,15 +21,25 @@ The LSP gateway uses the [Language Server Protocol](https://github.com/Microsoft
 
 Generate an access token on your Sourcegraph instance at:
 
-<pre class="pre-wrap"><code class="language-none"><strong style="color:#F96216">https://sourcegraph.example.com</strong>/settings/tokens</code></pre>
+```none
+https://sourcegraph.example.com/user/account/tokens
+```
 
 Then run this query to echo your username back:
 
-<pre class="pre-wrap"><code class="language-none">curl<span class="virtual-br"></span> -H 'Authorization: token <strong style="color:#F96216">your-token</strong>'<span class="virtual-br"></span> -d '{"query": "query { currentUser { username } }"}'<span class="virtual-br"></span> <strong style="color:#F96216">https://sourcegraph.example.com</strong>/.api/graphql</code></pre>
+```shell
+curl \
+  -H 'Authorization: token YOUR_TOKEN' \
+  -d '{"query": "query { currentUser { username } }"}' \
+ https://sourcegraph.example.com/.api/graphql
+```
 
+ 
 You should see a response like this:
 
-<pre class="pre-wrap"><code class="language-none">{"data":{"currentUser":{"username":"<strong style="color:#F96216">you</strong>"}}}</code></pre>
+``` json
+{"data":{"currentUser":{"username":"YOUR_USERNAME"}}}
+```
 
 ## Documentation & tooling
 
@@ -53,7 +59,13 @@ Sourcegraph's GraphQL API documentation is available directly in the API console
 
 Site admins may create access tokens with the special `site-admin:sudo` scope, which allows the holder to perform any action as any other user.
 
-<pre class="pre-wrap"><code class="language-none">curl<span class="virtual-br"></span> -H 'Authorization: token-sudo user="<strong style="color:#F96216">sudo-to-username</strong>",token="<strong style="color:#F96216">your-token</strong>"'<span class="virtual-br"></span> -d '{"query": "query { currentUser { username } }"}'<span class="virtual-br"></span> <strong style="color:#F96216">https://sourcegraph.example.com</strong>/.api/graphql</code></pre>
+```shell
+curl \
+  -H 'Authorization: token-sudo user="SUDO_TO_USERNAME",token="YOUR_TOKEN"' \
+  -d '{"query": "query { currentUser { username } }"}' \
+ https://sourcegraph.example.com/.api/graphql
+```
+
 
 This scope is useful when building Sourcegraph integrations with external services where the service needs to communicate with Sourcegraph and does not want to force each user to individually authenticate to Sourcegraph.
 
@@ -76,7 +88,13 @@ To learn more, see [github.com/sourcegraph/src-cli](https://github.com/sourcegra
 
 The entire API can be used via `curl` (or any HTTP library), just the same as any other GraphQL API. For example:
 
-<pre class="pre-wrap"><code class="language-none">curl<span class="virtual-br"></span> -H 'Authorization: token <strong style="color:#F96216">your-token</strong>'<span class="virtual-br"></span> -d '{"query":"query($query: String!) { search(query: $query) { results { resultCount } } }","variables":{"query":"Router"}}'<span class="virtual-br"></span> https://sourcegraph.com/.api/graphql</code></pre>
+``` shell
+curl \
+  -H 'Authorization: token YOUR_TOKEN' \
+  -d '{"query":"query($query: String!) { search(query: $query) { results { resultCount } } }","variables":{"query":"Router"}}' \
+  https://sourcegraph.com/.api/graphql
+```
+
 
 i.e. you just need to send the `Authorization` header and a JSON object like `{"query": "my query string", "variables": {"var1": "val1"}}`.
 

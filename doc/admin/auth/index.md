@@ -1,10 +1,6 @@
 # User authentication (SSO)
 
-<div class="alert alert-info">
-
-Single sign-on integrations are a [paid upgrade](/pricing). [Buy SSO.](/contact/sales)
-
-</div>
+> NOTE: Single sign-on integrations are a [paid upgrade](https://about.sourcegraph.com/pricing).
 
 Sourcegraph supports the following ways for users to sign in:
 

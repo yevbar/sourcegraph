@@ -48,7 +48,7 @@ For Sourcegraph instances running on a single node, follow these steps on the ma
     ```
     $ docker ps
     CONTAINER ID        IMAGE
-    d039ec989761        sourcegraph/server:<server-version-number />
+    d039ec989761        sourcegraph/server:VERSION
     ```
 2.  Open a PostgreSQL interactive terminal:
     ```

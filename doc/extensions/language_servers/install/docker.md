@@ -26,7 +26,14 @@ If you're already running the `sourcegraph/server` Docker image (as described in
 
 Now, run the `sourcegraph/server` Docker image as described in the [quickstart](/admin/install), but with two additional flags: `--network=lsp` and `--name=sourcegraph`:
 
-<pre class="pre-wrap"><code>docker run<span class="virtual-br"></span> --publish 7080:7080 --rm<span class="virtual-br"></span> --network=lsp --name=sourcegraph<span class="virtual-br"></span> --volume ~/.sourcegraph/config:/etc/sourcegraph<span class="virtual-br"></span> --volume ~/.sourcegraph/data:/var/opt/sourcegraph<span class="virtual-br"></span> sourcegraph/server:<server-version-number /><span class="virtual-br"></span></code></pre>
+```shell
+docker run \
+  --publish 7080:7080 --rm \
+  --network=lsp --name=sourcegraph \
+  --volume ~/.sourcegraph/config:/etc/sourcegraph \
+  --volume ~/.sourcegraph/data:/var/opt/sourcegraph \
+  sourcegraph/server:VERSION
+```
 
 ### Run the language server containers
 
@@ -34,11 +41,18 @@ Next, run the language servers for the languages you want to use with code intel
 
 ###### Go
 
-<pre class="pre-wrap"><code>docker pull sourcegraph/codeintel-go<br/>docker run --rm --network=lsp --name=go<span class="virtual-br"></span> -e SRC_GIT_SERVERS='sourcegraph:3178'<span class="virtual-br"></span> sourcegraph/codeintel-go</code></pre>
+```shell
+docker pull sourcegraph/codeintel-go
+
+docker run --rm --network=lsp --name=go \
+  -e SRC_GIT_SERVERS='sourcegraph:3178' \
+  sourcegraph/codeintel-go
+```
+
 
 ##### TypeScript and/or JavaScript
 
-```sh
+```shell
 docker pull sourcegraph/codeintel-typescript
 
 docker run --rm --network=lsp --name=typescript sourcegraph/codeintel-typescript
@@ -46,7 +60,7 @@ docker run --rm --network=lsp --name=typescript sourcegraph/codeintel-typescript
 
 ##### Python
 
-```sh
+```shell
 docker pull sourcegraph/codeintel-python
 
 docker run --rm --network=lsp --name=python sourcegraph/codeintel-python
@@ -54,7 +68,7 @@ docker run --rm --network=lsp --name=python sourcegraph/codeintel-python
 
 ##### Java
 
-```sh
+```shell
 docker pull sourcegraph/codeintel-java
 
 docker run --rm --network=lsp --name=java sourcegraph/codeintel-java
@@ -62,7 +76,7 @@ docker run --rm --network=lsp --name=java sourcegraph/codeintel-java
 
 ##### PHP
 
-```sh
+```shell
 docker pull sourcegraph/codeintel-php
 
 docker run --rm --network=lsp --name=php sourcegraph/codeintel-php

@@ -127,10 +127,7 @@ repositories, so that users will be able to jump through to the source code of t
 
 #### Private artifact repository for Data Center (DEPRECATED)
 
-<div class="alert alert-warning">
-    Note: As of Sourcegraph Data Center 2.10, this configuration is deprecated in favor of the
-    <tt>initializationOptions</tt> configuration settings (described immediately above).
-</div>
+> WARNING: As of Sourcegraph Data Center 2.10, this configuration is deprecated in favor of the `initializationOptions` configuration settings (described immediately above).
 
 Add the following to your site config:
 
@@ -152,11 +149,7 @@ Maven plugins will not be executed. This includes the `maven replacer` plugin, w
 
 ### Gradle execution
 
-<div class="alert-warn">
-
-**Security note:** Before enabling this option, turn off automatic-repository cloning in your site config. After enabling this option, do not add any repository to Sourcegraph whose build scripts you do not trust. This option enables the Java language service to execute the Gradle build scripts of repositories added to your Sourcegraph instance.
-
-</div>
+> WARNING: Security note: Before enabling this option, turn off automatic-repository cloning in your site config. After enabling this option, do not add any repository to Sourcegraph whose build scripts you do not trust. This option enables the Java language service to execute the Gradle build scripts of repositories added to your Sourcegraph instance.
 
 Java code intelligence works automatically for most Gradle build scripts. If your Gradle build is more complex, add the following to your site config:
 

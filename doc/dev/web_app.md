@@ -1,4 +1,4 @@
-# Sourcegraph WebApp
+# Developing the Sourcegraph web app
 
 Guide to contribute to the Sourcegraph webapp.
 

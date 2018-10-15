@@ -2,8 +2,6 @@
 
 This is a high level overview of our architecture at Sourcegraph so you can understand how our services fit together.
 
-You should take a moment to browse our public documentation and marketing to see what our users see:
-https://about.sourcegraph.com/
 
 ## Diagram
 
@@ -54,7 +52,7 @@ Here are the services that compose Sourcegraph.
 
 ### frontend ([code](https://github.com/sourcegraph/sourcegraph/tree/master/cmd/frontend))
 
-The frontend serves our [web app](./web.md) and hosts our [GraphQL API](https://docs.sourcegraph.com/api/graphql).
+The frontend serves our [web app](web_app.md) and hosts our [GraphQL API](../api/graphql).
 
 Application data is stored in our Postgresql database.
 

@@ -1,10 +1,6 @@
 # G Suite integration
 
-<div class="alert alert-info">
-
-Company-wide deployment via G Suite is a [paid upgrade](/pricing). [Buy G Suite deployment.](/contact/sales)
-
-</div>
+> NOTE: Company-wide deployment via G Suite is a [paid upgrade](https://about.sourcegraph.com/pricing)
 
 You can now install and preconfigure the Sourcegraph Chrome extension for all users in your G Suite organization.
 
@@ -15,7 +11,7 @@ each user's Chrome browser will install and configure the Sourcegraph Chrome
 extension automatically. (It may take a few hours to fully propagate the Chrome
 settings.) Then all users will see code intelligence like this:
 
-<img src="./img/GitHubGSuiteDemo.png" style="border: 1px solid red"/>
+<img src="img/GitHubGSuiteDemo.png" style="border: 1px solid red"/>
 
 ## Automatically install with G Suite
 

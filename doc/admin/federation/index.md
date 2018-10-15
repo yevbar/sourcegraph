@@ -2,7 +2,7 @@
 
 Federation refers to using multiple Sourcegraph servers together, each of which is responsible for a subset of repositories.
 
-Currently the only supported federation use case is [redirecting your Sourcegraph instance's users to Sourcegraph.com for _public_ repositories](./public_repositories) (instead of mirroring, analyzing, and indexing public repositories on your Sourcegraph instance).
+Currently the only supported federation use case is [redirecting your Sourcegraph instance's users to Sourcegraph.com for _public_ repositories](public_repositories) (instead of mirroring, analyzing, and indexing public repositories on your Sourcegraph instance).
 
 ## Future plans
 
