@@ -10,7 +10,7 @@ div.alert-info {
 
 This tutorial shows you how to deploy Sourcegraph to a single node running on DigitalOcean.
 
-If you're just starting out, we recommend [installing Sourcegraph locally](/admin/install). It takes only a few minutes and lets you try out all of the features. If you need scalability and high-availability beyond what a single-server deployment can offer, use the [Lubernetes cluster deployment option](https://github.com/sourcegraph/deploy-sourcegraph).
+If you're just starting out, we recommend [installing Sourcegraph locally](/admin/install.md). It takes only a few minutes and lets you try out all of the features. If you need scalability and high-availability beyond what a single-server deployment can offer, use the [Lubernetes cluster deployment option](https://github.com/sourcegraph/deploy-sourcegraph).
 
 ---
 
@@ -35,7 +35,7 @@ If you're just starting out, we recommend [installing Sourcegraph locally](/admi
 
 - Launch your instance, then navigate to its IP address.
 
-- If you have configured a DNS entry for the IP, configure `appURL` to reflect that. If `appURL` has the HTTPS protocol then Sourcegraph will get a certificate via [Let's Encrypt](https://letsencrypt.org/). For more information or alternative methods, see "[Using TLS/SSL](/admin/tls_ssl)".
+- If you have configured a DNS entry for the IP, configure `appURL` to reflect that. If `appURL` has the HTTPS protocol then Sourcegraph will get a certificate via [Let's Encrypt](https://letsencrypt.org/). For more information or alternative methods, see "[Using TLS/SSL](/admin/tls_ssl.md)".
 
 ---
 

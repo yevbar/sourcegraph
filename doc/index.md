@@ -7,23 +7,23 @@ Sourcegraph development is open source at [github.com/sourcegraph/sourcegraph](h
 
 ## For users
 
-The [user documentation](user) is about how to use Sourcegraph. The most read docs are:
+The [user documentation](user.md) is about how to use Sourcegraph. The most read docs are:
 
-- [Overview](user): What is Sourcegraph?
-- [Tour](user/tour): A walkthrough of Sourcegraph's features, with real-world example use cases.
-- [Code search](user/search)
+- [Overview](user.md): What is Sourcegraph?
+- [Tour](user/tour.md): A walkthrough of Sourcegraph's features, with real-world example use cases.
+- [Code search](user/search/index.md)
 - [Code browsing](#TODO)
 - [Code review](#TODO)
-- [Integrations](integration)
-- [GraphQL API](api/graphql)
+- [Integrations](integration.md)
+- [GraphQL API](api/graphql.md)
 
 ## For site administrators
 
-The [site administration documentation](admin) is about deploying and managing a Sourcegraph self-hosted instance.
+The [site administration documentation](admin.md) is about deploying and managing a Sourcegraph self-hosted instance.
 
 ## For contributors to Sourcegraph
 
-See the [contributor documentation](dev) and the [main Sourcegraph repository](https://github.com/sourcegraph/sourcegraph) (open-source).
+See the [contributor documentation](dev.md) and the [main Sourcegraph repository](https://github.com/sourcegraph/sourcegraph) (open-source).
 
 ## Sourcegraph subscriptions
 

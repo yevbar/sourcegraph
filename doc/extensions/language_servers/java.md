@@ -1,6 +1,6 @@
 # Java: code intelligence configuration
 
-This page describes additional configuration that may be needed for Java code intelligence on certain codebases. To enable Java code intelligence, see the [installation documentation](/extensions/language_servers/install).
+This page describes additional configuration that may be needed for Java code intelligence on certain codebases. To enable Java code intelligence, see the [installation documentation](/extensions/language_servers/install/index.md).
 
 ---
 

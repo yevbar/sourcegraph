@@ -2,7 +2,7 @@
 
 ### Code search from your browser's address bar
 
-If you have the [Sourcegraph browser extension](/integration/browser_extension) installed, your search shortcut is already configured under the keyword `src`!
+If you have the [Sourcegraph browser extension](/integration/browser_extension.md) installed, your search shortcut is already configured under the keyword `src`!
 
 In your browser's address bar, type <kbd>src</kbd> followed by <kbd>tab</kbd> in Chrome or <kbd>src</kbd> followed by <kbd>space</kbd> in Firefox to initiate a Sourcegraph Search. You'll see search suggestions in your browser just as you would on your Sourcegraph Instance. You can use these suggestions to go directly to repos, files or more. Otherwise, when you press enter, you'll be taken to your Sourcegraph Instance's search results page for the search you entered.
 
@@ -14,7 +14,7 @@ Creating a Chome address bar shortcut for Sourcegraph code search makes it so yo
 
 1.  Perform any code search on your Sourcegraph instance (or Sourcegraph.com for public code). Copy the URL of the search results page to your clipboard.
 
-2.  Go to [`chrome://settings`](chrome://settings). Under **Search engine**, click **Manage search engines**. Next to **Other search engines**, click **ADD**.
+2.  Go to [`chrome://settings`](chrome://settings.md). Under **Search engine**, click **Manage search engines**. Next to **Other search engines**, click **ADD**.
 
 <img src="img/AddButton.png"/>
 

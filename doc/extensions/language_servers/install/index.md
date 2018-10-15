@@ -1,6 +1,6 @@
 # Installing code intelligence
 
-These instructions walk you through setting up [code intelligence](/extensions/language_servers) for single-node `sourcegraph/server` deployments of Sourcegraph. For Sourcegraph cluster deployments on Kubernetes, see [cluster code intelligence instructions](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/install.md#add-language-servers-for-code-intelligence).)
+These instructions walk you through setting up [code intelligence](/extensions/language_servers.md) for single-node `sourcegraph/server` deployments of Sourcegraph. For Sourcegraph cluster deployments on Kubernetes, see [cluster code intelligence instructions](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/install.md#add-language-servers-for-code-intelligence).)
 
 ## Automatic installation (default)
 
@@ -10,10 +10,10 @@ If you do not wish to use code intelligence, you can disable language servers in
 
 ## Manual Installation
 
-If you do not want to give Sourcegraph access to the Docker socket, then you may [install code intelligence manually](/extensions/language_servers/install).
+If you do not want to give Sourcegraph access to the Docker socket, then you may [install code intelligence manually](/extensions/language_servers/install/index.md).
 
 ---
 
 ## Next steps
 
-To get code intelligence on your code host and/or code review tool, follow the instructions in our [integrations documentation](/integration).
+To get code intelligence on your code host and/or code review tool, follow the instructions in our [integrations documentation](/integration.md).

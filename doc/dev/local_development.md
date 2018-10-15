@@ -180,7 +180,7 @@ source these env vars on demand when you start the server.
 ### More info
 
 For more information about data storage, [read our full PostgreSQL Guide
-page](postgresql).
+page](postgresql.md).
 
 Migrations are applied automatically.
 

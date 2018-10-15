@@ -12,13 +12,13 @@ For Kubernetes cluster deployments of Sourcegraph, edit the `config-file.ConfigM
 
 ## Next steps
 
-See [all site configuration options](/admin/site_config), or read walkthroughs of common configuration use cases:
+See [all site configuration options](/admin/site_config/index.md), or read walkthroughs of common configuration use cases:
 
 - [Add repositories to search from your code host](/admin/repo/add)
-- [Add user authentication providers (SSO)](/admin/auth)
-- [Configure search scopes](/user/search/scopes)
-- [Integrate with Phabricator](/integration/phabricator)
-- [Add organizations](/user/organizations)
-- [Add a TLS/SSL certificate](/admin/tls_ssl)
-- [Use a custom domain](/admin/url)
-- [Updating Sourcegraph Server](/admin/updates)
+- [Add user authentication providers (SSO)](/admin/auth.md)
+- [Configure search scopes](/user/search/scopes.md)
+- [Integrate with Phabricator](/integration/phabricator.md)
+- [Add organizations](/user/organizations.md)
+- [Add a TLS/SSL certificate](/admin/tls_ssl.md)
+- [Use a custom domain](/admin/url.md)
+- [Updating Sourcegraph Server](/admin/updates.md)

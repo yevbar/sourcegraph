@@ -16,7 +16,7 @@ You can use a browser extension to try the Phabricator integration for yourself.
 
     <img src="img/PhabricatorURL.png" style="border: 1px solid red"/>
 
-3.  [Update Sourcegraph site configuration](/admin/site_config) to allow scripts on your Phabricator instance to communicate with your Sourcegraph instance:
+3.  [Update Sourcegraph site configuration](/admin/site_config/index.md) to allow scripts on your Phabricator instance to communicate with your Sourcegraph instance:
 
     ```json
     {

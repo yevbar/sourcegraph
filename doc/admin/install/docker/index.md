@@ -29,11 +29,11 @@ Click **Add GitHub.com repositories** to add all repositories associated with yo
 
 ## Next steps
 
-- [Configure your Sourcegraph instance](/admin/site_config)
-- [Configure code intelligence](/extensions/language_servers)
-- [Deploy Sourcegraph on AWS](/admin/install/docker/aws)
+- [Configure your Sourcegraph instance](/admin/site_config/index.md)
+- [Configure code intelligence](/extensions/language_servers.md)
+- [Deploy Sourcegraph on AWS](/admin/install/docker/aws.md)
 - [Deploy Sourcegraph on Google Cloud Platform](/admin/install/docker/google_cloud)
-- [Deploy Sourcegraph on Digital Ocean](/admin/install/docker/digitalocean)
+- [Deploy Sourcegraph on Digital Ocean](/admin/install/docker/digitalocean.md)
 
 ## File system performance on Docker for Mac
 

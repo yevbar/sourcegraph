@@ -2,12 +2,12 @@
 
 <!-- TODO(sqs): add more -->
 
-- [Add repositories from GitHub or GitHub Enterprise](../../integration/github)
-- [Add repositories from GitLab](../../integration/gitlab)
-- [Add repositories from Bitbucket Server](../../integration/bitbucket_server)
-- [Add repositories from AWS CodeCommit](../../integration/aws_codecommit)
-- [Add repositories from any Git host](add_from_git_repository)
-- [Add repositories from the local disk](add_from_local_disk)
+- [Add repositories from GitHub or GitHub Enterprise](../../integration/github.md)
+- [Add repositories from GitLab](../../integration/gitlab.md)
+- [Add repositories from Bitbucket Server](../../integration/bitbucket_server.md)
+- [Add repositories from AWS CodeCommit](../../integration/aws_codecommit.md)
+- [Add repositories from any Git host](add_from_git_repository.md)
+- [Add repositories from the local disk](add_from_local_disk.md)
 
 ## Troubleshooting
 

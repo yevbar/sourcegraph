@@ -17,7 +17,7 @@ Welcome to Sourcegraph! As a developer, you can use Sourcegraph to get help whil
      - [Diff search](#TODO)
      - [Commit message search](#TODO)
      - [Multi-branch search](#TODO)
-- [GraphQL API](../api/graphql)
+- [GraphQL API](../api/graphql/index.md)
 
 All features:
 
@@ -63,8 +63,8 @@ Also, both Facebook and Google provide an in-house Sourcegraph-like code search 
 
 ## How do I start using Sourcegraph?
 
-1.  [Set up Sourcegraph](/admin/install) inside your organization on your internal code, if nobody else has yet
-1.  Install and configure the [web browser code host integrations](/integration) (recommended)
+1.  [Set up Sourcegraph](/admin/install.md) inside your organization on your internal code, if nobody else has yet
+1.  Install and configure the [web browser code host integrations](/integration.md) (recommended)
 1.  Start searching and browsing code on Sourcegraph by visiting the URL of your organization's internal Sourcegraph instance
 
 You can also try [Sourcegraph.com](https://sourcegraph.com/search), which is a public instance of Sourcegraph for use on open-source code only.
@@ -84,17 +84,17 @@ Sourcegraph gives you code intelligence in:
 
 - **code files in Sourcegraph's web UI**
 
-![Hover tooltip](../extensions/language_servers/img/hover-tooltip.png)
+![Hover tooltip](../extensions/language_servers/img/hover-tooltip.png.md)
 
-- **diffs in your code review tool**, via [integrations](/integration)
+- **diffs in your code review tool**, via [integrations](/integration.md)
 
-![GitHub pull request integration](../integration/img/GitHubDiff.png)
+![GitHub pull request integration](../integration/img/GitHubDiff.png.md)
 
-- **code files on your code host**, via [integrations](/integration)
+- **code files on your code host**, via [integrations](/integration.md)
 
-![GitHub file integration](img/GitHubFile.png)
+![GitHub file integration](img/GitHubFile.png.md)
 
-Read the [code intelligence documentation](/extensions/language_servers) to learn more or [set up code intelligence](/extensions/language_servers/install).
+Read the [code intelligence documentation](/extensions/language_servers.md) to learn more or [set up code intelligence](/extensions/language_servers/install/index.md).
 
 ---
 
@@ -108,10 +108,10 @@ Sourcegraph code search is fast, works across all your repositories at any commi
 - Custom search scopes
 - Saved search monitoring
 
-Read the [code search documentation](/user/search) to learn more and discover the full feature set.
+Read the [code search documentation](/user/search/index.md) to learn more and discover the full feature set.
 
 ---
 
 ## Integrations
 
-Sourcegraph allows you to get code intelligence and code search on code files and code review diffs in your code host and review tool. See our [integrations documentation](/integration) to set up Sourcegraph with your tools and roll it out to your entire team.
+Sourcegraph allows you to get code intelligence and code search on code files and code review diffs in your code host and review tool. See our [integrations documentation](/integration.md) to set up Sourcegraph with your tools and roll it out to your entire team.

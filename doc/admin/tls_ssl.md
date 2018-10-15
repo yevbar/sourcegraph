@@ -49,7 +49,7 @@ For single-server Docker image deployments, add the following lines to your site
 }
 ```
 
-Next, restart your Sourcegraph instance using the same `docker run` [command](/admin/install), but map the host port to the container HTTPS port 7443 (not the HTTP port 7080). In this example, the host port 443 (HTTPS) is mapped to the container's HTTPS port 7443.
+Next, restart your Sourcegraph instance using the same `docker run` [command](/admin/install.md), but map the host port to the container HTTPS port 7443 (not the HTTP port 7080). In this example, the host port 443 (HTTPS) is mapped to the container's HTTPS port 7443.
 
 ```shell
 docker run \
