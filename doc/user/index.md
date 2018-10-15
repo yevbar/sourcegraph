@@ -2,7 +2,11 @@
 
 Welcome to Sourcegraph! As a developer, you can use Sourcegraph to get help while writing and reviewing code.
 
-- [Tour](#TODO): A walkthrough of Sourcegraph's features, with real-world example use cases.
+- [Tour](tour.md): A walkthrough of Sourcegraph's features, with real-world example use cases.
+- Integrations:
+   - [Browser extension](../integration/browser_extension.md) (adds go-to-definition, hover tooltips, etc., to your code host and review tool)
+   - [Browser search engine](../integration/browser_search_engine.md)
+   - [Editor extension](../integration/editor.md)
 - [Code search](#TODO)
   - [Query syntax](#TODO): Supported query operators.
   - Types of searches:
@@ -13,13 +17,11 @@ Welcome to Sourcegraph! As a developer, you can use Sourcegraph to get help whil
      - [Diff search](#TODO)
      - [Commit message search](#TODO)
      - [Multi-branch search](#TODO)
-- [Code browsing](#TODO)
-- [Code review](#TODO)
 - [GraphQL API](../api/graphql)
 
 All features:
 
-- [Usage statistics](usage_statistics)
+- [Usage statistics](usage_statistics.md)
 
 ## What is Sourcegraph?
 
@@ -55,7 +57,7 @@ All developers, except:
 
 ## Who else uses Sourcegraph?
 
-In addition to the [companies listed on the homepage](/), many large technology companies with 500-3,000+ engineers use Sourcegraph internally.
+In addition to the [companies listed on about.sourcegraph.com](https://about.sourcegraph.com), many large technology companies with 500-3,000+ engineers use Sourcegraph internally.
 
 Also, both Facebook and Google provide an in-house Sourcegraph-like code search and intelligence tool to their employees. A [published research paper from Google](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43835.pdf) and a [Google developer survey](https://docs.google.com/document/d/1LQxLk4E3lrb3fIsVKlANu_pUjnILteoWMMNiJQmqNVU/edit#heading=h.xxziwxixfqq3) showed that 98% of developers surveyed consider their Sourcegraph-like internal tool to be critical. Developers use it on average for 5.3 sessions each day. (Facebook's and Google's in-house tools are not available to other companies; use Sourcegraph instead.)
 
@@ -98,7 +100,7 @@ Read the [code intelligence documentation](/extensions/language_servers) to lear
 
 ## Code search
 
-Sourcegraph code search is fast, works across all your repositories at any commit, and without any indexing delay. Code search also includes advanced features, including:
+Sourcegraph code search is fast, works across all your repositories at any commit, and has no indexing delay. Code search also includes advanced features, including:
 
 - Powerful, flexible query syntax
 - Commit diff search

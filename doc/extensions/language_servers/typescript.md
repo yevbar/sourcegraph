@@ -4,12 +4,6 @@ To enable TypeScript code intelligence, see the [installation documentation](/ex
 
 Sourcegraph's TypeScript code intelligence uses your existing [tsconfig.json](http://www.typescriptlang.org/docs/handbook/tsconfig-json.html) to analyze your TypeScript code. Multiple projects (and tsconfig.json files) in a single repository are supported.
 
-To get code intelligence on Sourcegraph Server (contact us for Sourcegraph Data Center) on code that depends on a package in a private registry, copy your `.npmrc` or `.yarnrc` into the `typescript` container:
+Sourcegraph's TypeScript support is a superset of its JavaScript support. See [JavaScript language support documentation](javascript.md) for information about topics that are common to both TypeScript and JavaScript, such as:
 
-```
-docker cp ~/.npmrc typescript:/usr/local/share/.npmrc
-```
-
-And simply refresh the page. This will not survive container restarts, but we are looking into providing a mechanism to ensure this perists.
-
-Questions/feedback? Contact us at [@srcgraph](https://twitter.com/srcgraph) or <mailto:support@sourcegraph.com>, or file issues on our [public issue tracker](https://github.com/sourcegraph/issues/issues).
+- [Private package dependencies](javascript.md#private-package-dependencies)

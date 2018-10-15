@@ -125,24 +125,6 @@ If the artifact repository is unauthenticated, then the above config is unnecess
 It is recommended that you add the source repositories of all JARs hosted in your private artifact
 repositories, so that users will be able to jump through to the source code of these dependencies.
 
-#### Private artifact repository for Data Center (DEPRECATED)
-
-> WARNING: As of Sourcegraph Data Center 2.10, this configuration is deprecated in favor of the `initializationOptions` configuration settings (described immediately above).
-
-Add the following to your site config:
-
-```json
-  "privateArtifactRepoURL": "https://${ARTIFACTORY_HOST}/artifactory/${REPOSITORY_ID}",
-  "privateArtifactRepoID": "${REPOSITORY_ID}",
-```
-
-Optionally, if your private artifact repository requires authentication, add:
-
-```json
-  "privateArtifactRepoUsername": "${ARTIFACTORY_USERNAME}",
-  "privateArtifactRepoPassword": "${ARTIFACTORY_PASSWORD}",
-```
-
 ### Maven plugins
 
 Maven plugins will not be executed. This includes the `maven replacer` plugin, which is often used to generate Java source files from templates.
@@ -169,17 +151,11 @@ Use the `JVM_OPT` environment variable to pass JVM options to the Java language 
 JVM_OPT='-Xms8000m -Xmx8000m -Dsun.zip.disableMemoryMapping=true'
 ```
 
-- In Sourcegraph, set this environment variable on the container running the `sourcegraph/codeintel-java` image: `docker run ... -e JVM_OPT='...' sourcegraph/codeintel-java`
-- In Sourcegraph Data Center, set this environment variable on the `xlang-java` deployment (in Kubernetes). You will need to reapply this change it each time you `helm upgrade`; this is a known issue that will be addressed in a future release.
+- For single-node Sourcegraph deployments, set this environment variable on the container running the `sourcegraph/codeintel-java` image: `docker run ... -e JVM_OPT='...' sourcegraph/codeintel-java`
+- For Sourcegraph cluster deployments on Kubernetes, set this environment variable on the `xlang-java` Kubernetes deployment. You will need to reapply this change it each time you `helm upgrade`; this is a known issue that will be addressed in a future release.
 
 ### Heap size
 
 If you notice the Java language server exiting unexpectedly with an out-of-memory error or a `Killed` message, increase the JVM heap size (using `JVM_OPT` as shown above). The parameters `-Xmx8000m -Xms8000m` (8000 MB) are usually sufficient. You can monitor actual memory usage and reduce the heap size accordingly to preserve resources if needed.
 
 As a rough guideline, the Java language server generally consumes about 50% as much memory as a local Java IDE (IntelliJ/Eclipse/etc.) analyzing the samee project.
-
----
-
-## More help
-
-Questions/feedback? Contact us at [@srcgraph](https://twitter.com/srcgraph) or <mailto:support@sourcegraph.com>, or file issues on our [public issue tracker](https://github.com/sourcegraph/issues/issues).

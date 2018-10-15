@@ -2,7 +2,7 @@
 
 You can also add repositories to Sourcegraph that are already cloned to disk on the host machine. This is useful for repositories requiring non-standard authentication to clone, or very large repositories on which cloning exceeds the resources available to the Docker container.
 
-The steps documented here are intended for Sourcegraph instances running on a single node. The general process also applies to Sourcegraph Data Center (running on Kubernetes), but you need to perform these steps on the underlying node hosting the `gitserver` pod, or on the persistent volume used by the `gitserver` deployment.
+The steps documented here are intended for Sourcegraph instances running on a single node. The general process also applies for clustered deployments of Sourcegraph to Kubernetes, but you need to perform these steps on the underlying node hosting the `gitserver` pod, or on the persistent volume used by the `gitserver` deployment.
 
 If you're using the default `--volume $HOME/.sourcegraph/data:/var/opt/sourcegraph` argument to run the `sourcegraph/server` Docker image, and the repository you want to add is named `github.com/my/repo`, then follow these steps:
 

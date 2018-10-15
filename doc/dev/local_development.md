@@ -7,7 +7,7 @@ reading the code at https://sourcegraph.com/github.com/sourcegraph/sourcegraph.
 
 The Sourcegraph server is actually a collection of smaller binaries, each of
 which performs one task. The core entrypoint for the Sourcegraph development
-server is [dev/launch.sh](../dev/launch.sh), which will initialize the environment, and start a
+server is [dev/launch.sh](https://github.com/sourcegraph/sourcegraph/blob/master/dev/launch.sh), which will initialize the environment, and start a
 process manager that runs all of the binaries.
 
 See [the Architecture doc](architecture.md) for a full description of what each
@@ -180,11 +180,9 @@ source these env vars on demand when you start the server.
 ### More info
 
 For more information about data storage, [read our full PostgreSQL Guide
-page][database-init].
+page](postgresql).
 
 Migrations are applied automatically.
-
-[database-init]: ./storage.md
 
 ## Step 5: Start Docker
 
@@ -335,7 +333,7 @@ Requires "Debugger for Chrome" extension.
 **Note: If you run into an error `could not launch process: decoding dwarf section info at offset 0x0: too short` make sure you are on the latest delve version**
 
 - Install [Delve](https://github.com/derekparker/delve)
-- Run `DELVE=frontend,searcher ./dev/launch.sh` (`DELVE` accepts a comma-separated list of components as specified in [../dev/Procfile](../dev/Procfile))
+- Run `DELVE=frontend,searcher ./dev/launch.sh` (`DELVE` accepts a comma-separated list of components as specified in [dev/Procfile](https://github.com/sourcegraph/sourcegraph/blob/master/dev/Procfile))
 - Set a breakpoint in VS Code (there's a bug where setting the breakpoint after attaching results in "Unverified breakpoint")
 - Run "Attach to $component" in the VS Code debug view
 - The process should start once the debugger is attached

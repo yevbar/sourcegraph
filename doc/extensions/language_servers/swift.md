@@ -57,9 +57,3 @@ Add an entry to the `langservers` field in the Sourcegraph site configuration, r
 Save the changes.
 
 Once you open a Swift file (e.g. http://sourcegraph.example.com/github.com/RLovelett/langserver-swift/-/blob/Sources/LanguageServerProtocol/Types/Server.swift), you should see `lsp-adapter` logging requests. You should also see hover tooltips on variables, functions, classes, etc.
-
----
-
-## More help
-
-Questions/feedback? Contact us at [@srcgraph](https://twitter.com/srcgraph) or <mailto:support@sourcegraph.com>, or file issues on our [public issue tracker](https://github.com/sourcegraph/issues/issues).

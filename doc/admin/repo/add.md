@@ -13,8 +13,8 @@
 
 If your repositories are not showing up:
 
-- On Sourcegraph, check the logs from the Docker container for error messages related to communication with your code host's API.
-- On Sourcegraph Data Center, check the logs from the `repo-updater` pod.
+- On single-node deployments, check the logs from the `sourcegraph/server` Docker container for error messages related to communication with your code host's API.
+- On Kubernetes cluster deployments, check the logs from the `repo-updater` pod.
 - Check the site admin **Repositories** page on Sourcegraph (and ensure you're logged in as an admin).
 
 If your repositories are showing up but are not cloning or updating from the original Git repository:

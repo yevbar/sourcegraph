@@ -1,6 +1,6 @@
 # Sourcegraph documentation
 
-Sourcegraph, a code search and browsing tool with code intelligence that helps developers write and review code. Learn more about Sourcegraph at [about.sourcegraph.com](https://about.sourcegraph.com).
+Sourcegraph is a code search and browsing tool with code intelligence that helps developers write and review code. Learn more about Sourcegraph at [about.sourcegraph.com](https://about.sourcegraph.com).
 
 Sourcegraph development is open source at [github.com/sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph). If these docs don't solve your problem, check the [issue tracker](https://github.com/sourcegraph/sourcegraph/issues) or the [latest documentation](https://about.sourcegraph.com/docs).
 

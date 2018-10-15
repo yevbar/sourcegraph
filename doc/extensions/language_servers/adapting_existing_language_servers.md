@@ -61,7 +61,7 @@ Sourcegraph communicates with language servers over TCP.
 
   This is the best way to ensure that the language server is functioning correctly and to isolate the problem.
 
-- Set the following environment variables in the Sourcegraph Docker container (or the lsp-proxy deployment/pod, if using Sourcegraph Data Center):
+- Set the following environment variables in the `sourcegraph/server` Docker container (or the `lsp-proxy` deployment, for Sourcegraph cluster deployments to Kubernetes):
 
   ```
   LSP_PROXY_TRACE_FS_REQUESTS=1
@@ -70,6 +70,6 @@ Sourcegraph communicates with language servers over TCP.
 
   Try hovering over tokens again and inspect the log output.
 
-- To simplify testing, you can write tests that send a known-good sequence of LSP messages to Sourcegraph's /.api/xlang HTTP URL path and assert that the output matches an expected value.
+- To simplify testing, you can write tests that send a known-good sequence of LSP messages to Sourcegraph's `/.api/xlang` HTTP URL path and assert that the output matches an expected value.
 
   Tip: Perform a hover in your browser with devtools open and look for the `/.api/xlang/textDocument/hover` HTTP request. Right-click and choose "Copy as cURL" (in Chrome) to get a `curl` shell command that will perform the same request.

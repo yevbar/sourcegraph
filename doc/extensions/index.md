@@ -2,26 +2,7 @@
 
 Sourcegraph is getting an extension API that makes easy to add new features and information to Sourcegraph, GitHub, and other code hosts and review tools that our browser extensions integrate with. The [Sourcegraph extension API](https://github.com/sourcegraph/sourcegraph-extension-api) allows extensions to provide hovers, definitions, references, line decorations, buttons, menu items, and other similar contributions. For more information, see the open-source [sourcegraph-extension-api repository](https://github.com/sourcegraph/sourcegraph-extension-api).
 
-Sourcegraph extensions are available in alpha on Sourcegraph.com, and behind feature flags in Sourcegraph Data Center 2.11.2 and [Sourcegraph for Chrome](https://chrome.google.com/webstore/detail/sourcegraph/dgjhfomjieaadpoljlnidmbgkdffpack) or [Sourcegraph for Firefox](https://addons.mozilla.org/en-US/firefox/addon/sourcegraph/).
-
-### Upgrading to 2.11.2 and enabling the feature flags for Sourcegraph extensions
-
-While Sourcegraph extensions are in alpha, using them requires two opt-in steps: in site configuration, _and_ separately for each user on your Sourcegraph instance.
-
-1. Upgrade to Sourcegraph Data Center 2.11.2.
-1. Add the following to site configuration and apply the change to your Sourcegraph Data Center deployment.
-
-   ```
-   "experimentalFeatures": {"platform": true},
-   ```
-
-   There are no known issues that occur when this site configuration feature flag is enabled. It enables extensions-related API endpoints for users, but users won't see any change in the behavior of Sourcegraph until they individually opt in (in the next step).
-
-1. Then, each user who wants to use Sourcegraph extensions must run the following JavaScript code in their browser's devtools JavaScript console (when their browser is open to page on the Sourcegraph instance):
-
-   ```
-   localStorage.platform=true; location.reload()
-   ```
+Sourcegraph extensions are available in alpha on Sourcegraph.com, in Sourcegraph 2.11.2+, [Sourcegraph for Chrome](https://chrome.google.com/webstore/detail/sourcegraph/dgjhfomjieaadpoljlnidmbgkdffpack), and [Sourcegraph for Firefox](https://addons.mozilla.org/en-US/firefox/addon/sourcegraph/).
 
 ### Using Sourcegraph extensions on Sourcegraph
 

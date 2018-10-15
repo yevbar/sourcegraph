@@ -30,9 +30,3 @@ For example, if you use both a private package index at `https://python.example.
 ## Inference of package names
 
 The language server will not run `setup.py` or `pip install`. When it encounters an import, it tries to infer the package name and run `pip download`. (This also avoids running the downloaded package's `setup.py`.) This is expected to work as long as the name of the package on PyPI (or your private package index) is the same as the name that's imported in the source code.
-
----
-
-## More help
-
-Questions/feedback? Contact us at [@srcgraph](https://twitter.com/srcgraph) or <mailto:support@sourcegraph.com>, or file issues on our [public issue tracker](https://github.com/sourcegraph/issues/issues).

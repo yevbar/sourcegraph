@@ -11,10 +11,6 @@ Additional configuration for Go code intelligence may be required in some cases:
 - [Custom GOPATHs / Go monorepos](#custom-gopaths--go-monorepos)
 - [Vanity import paths](#vanity-import-paths)
 
-Questions/feedback? Contact us at [@srcgraph](https://twitter.com/srcgraph) or <mailto:support@sourcegraph.com>, or file issues on our [public issue tracker](https://github.com/sourcegraph/issues/issues).
-
----
-
 ## Custom GOPATHs / Go monorepos
 
 By default, Sourcegraph assumes that Go code in a repository represents Go packages that would be placed under `$GOPATH/src/...`. That is, a Go repository is assumed to only contain Go packages.

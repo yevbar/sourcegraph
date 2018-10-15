@@ -13,12 +13,12 @@ With an accurate jsconfig.json file for your project, Sourcegraph's code intelli
 - GitHub's Atom, using [Atom-IDE's JavaScript support](https://github.com/atom/ide-typescript/) (which is based on Sourcegraph's JavaScript language server)
 - Any other editor that supports LSP, using Sourcegraph's JavaScript language server ([sourcegraph/javascript-typescript-langserver](https://github.com/sourcegraph/javascript-typescript-langserver))
 
-To get code intelligence on Sourcegraph Server (contact us for Sourcegraph Data Center) on code that depends on a package in a private registry, copy your `.npmrc` or `.yarnrc` into the `typescript` container:
+# Private package dependencies
+
+To support code that depends on private packages (or packages in private registries), copy your `.npmrc` or `.yarnrc` into the Docker container where the JavaScript/TypeScript language server is running:
 
 ```
 docker cp ~/.npmrc typescript:/usr/local/share/.npmrc
 ```
 
-And simply refresh the page. This will not survive container restarts, but we are looking into providing a mechanism to ensure this perists.
-
-Questions/feedback? Contact us at [@srcgraph](https://twitter.com/srcgraph) or <mailto:support@sourcegraph.com>, or file issues on our [public issue tracker](https://github.com/sourcegraph/issues/issues).
+This will not survive container restarts. We are looking into providing a mechanism to ensure this configuration persists.

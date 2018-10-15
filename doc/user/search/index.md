@@ -73,7 +73,7 @@ You can also type in the partial name of a repository or filename to quickly jum
 
 Searches scoped to specific repositories are always up-to-date. Sourcegraph automatically refetches repository contents upon any user action specific to the repository and makes new commits and branches available for searching and browsing immediately.
 
-Unscoped search results over large repository sets may trail latest default branch revisions by some interval of time. This interval is a function of the number of repositories and (in the case of Data Center) the computational resources devoted to search indexing.
+Unscoped search results over large repository sets may trail latest default branch revisions by some interval of time. This interval is a function of the number of repositories and the computational resources devoted to search indexing.
 
 ---
 

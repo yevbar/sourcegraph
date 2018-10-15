@@ -146,7 +146,3 @@ The response is a JSON array that looks like this:
 ```
 
 You can use the LSP gateway to run LSP queries against a language server that's running on the Sourcegraph instance. The LSP gateway shares connections between multiple users and dynamically opens/closes connections as needed.
-
-## Feedback
-
-We're constantly improving our GraphQL API and the documentation & tooling around it. Questions/feedback? Contact us at [@srcgraph](https://twitter.com/srcgraph) or <mailto:support@sourcegraph.com>, or file issues on our [public issue tracker](https://github.com/sourcegraph/issues/issues).

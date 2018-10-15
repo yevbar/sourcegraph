@@ -78,11 +78,11 @@ You're done! You'll now get **code intelligence** in your code hosts for all pri
 
 <br />
 
-### Additional Configuration
+### Additional configuration
 
 There are two ways to view and update the Sourcegraph browser extension's configuration.
 
-#### 1. Extension Icon
+#### 1. Extension icon
 
 Click the Sourcegraph extension icon in your browser's toolbar to open the extension's settings panel.
 

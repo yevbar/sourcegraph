@@ -1,6 +1,6 @@
-# Installing code intelligence on Sourcegraph
+# Installing code intelligence
 
-These instructions walk you through adding [code intelligence](/extensions/language_servers) to Sourcegraph. (Running Sourcegraph Data Center? See the [Data Center code intelligence instructions](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/install.md#add-language-servers-for-code-intelligence).)
+These instructions walk you through setting up [code intelligence](/extensions/language_servers) for single-node `sourcegraph/server` deployments of Sourcegraph. For Sourcegraph cluster deployments on Kubernetes, see [cluster code intelligence instructions](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/install.md#add-language-servers-for-code-intelligence).)
 
 ## Automatic installation (default)
 

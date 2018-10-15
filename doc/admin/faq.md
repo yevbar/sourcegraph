@@ -6,7 +6,7 @@
 
 Change the `docker` `--publish` argument to make it listen on the specific interface and port on your host machine. For example, `docker run ... --publish 0.0.0.0:80:7080 ...` would make it accessible on port 80 of your machine. For more information, see "[Publish or expose port](https://docs.docker.com/engine/reference/commandline/run/#publish-or-expose-port--p---expose)" in the Docker documentation.
 
-The other option is to deploy and run Sourcegraph on a cloud provider. Follow our documentation to [deploy to Google Cloud](/admin/install/docker/google_cloud).
+The other option is to deploy and run Sourcegraph on a cloud provider. For an example, see documentation to [deploy to Google Cloud](/admin/install/docker/google_cloud).
 
 ## How do I see my site config?
 
@@ -14,7 +14,7 @@ If you have admin web access to Sourcegraph, go to `http://YOUR_HOSTNAME_OR_IP/s
 
 OR
 
-For single-node Server instances, follow these steps on the machine that is running the Sourcegraph Docker container:
+For single-node deployments (`sourcegraph/server`), follow these steps on the machine that is running the Sourcegraph Docker container:
 
 1.  Get the Docker container id for Sourcegraph:
     ```
@@ -27,7 +27,7 @@ For single-node Server instances, follow these steps on the machine that is runn
     docker exec d039ec989761 cat /etc/sourcegraph/sourcegraph-config.json
     ```
 
-For Data Center:
+For Kubernetes cluster deployments:
 
 1.  Get the id of one sourcegraph-frontend pod:
     ```
@@ -42,9 +42,9 @@ For Data Center:
 
 ## How do I access the Sourcegraph database?
 
-For Sourcegraph instances running on a single node, follow these steps on the machine that is running the Sourcegraph Docker container:
+For single-node deployments (`sourcegraph/server`), follow these steps on the machine that is running the Sourcegraph Docker container:
 
-1.  Get the Docker container id for Sourcegraph:
+1.  Get the Docker container ID for Sourcegraph:
     ```
     $ docker ps
     CONTAINER ID        IMAGE
@@ -59,7 +59,7 @@ For Sourcegraph instances running on a single node, follow these steps on the ma
     select * from users;
     ```
 
-For Data Center:
+For Kubernetes cluster deployments:
 
 1.  Get the id of one pgsql pod:
     ```
