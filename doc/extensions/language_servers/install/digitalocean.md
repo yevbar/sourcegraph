@@ -52,4 +52,4 @@ Generally you do not ever need to perform manual installation of code intelligen
 
 ## Next steps
 
-To get code intelligence on your code host and/or code review tool, see the [browser extension documentation](../../../integration/browser_extension).
+To get code intelligence on your code host and/or code review tool, see the [browser extension documentation](../../../integration/browser_extension.md).

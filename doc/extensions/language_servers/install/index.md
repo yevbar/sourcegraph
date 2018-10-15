@@ -16,4 +16,4 @@ If you do not want to give Sourcegraph access to the Docker socket, then you may
 
 ## Next steps
 
-To get code intelligence on your code host and/or code review tool, see the [browser extension documentation](../../../integration/browser_extension).
+To get code intelligence on your code host and/or code review tool, see the [browser extension documentation](../../../integration/browser_extension.md).

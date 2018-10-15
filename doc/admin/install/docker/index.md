@@ -32,7 +32,7 @@ Click **Add GitHub.com repositories** to add all repositories associated with yo
 - [Configure your Sourcegraph instance](../../site_config/index.md)
 - [Configure code intelligence](../../../extensions/language_servers/index.md)
 - [Deploy Sourcegraph on AWS](../../install/docker/aws.md)
-- [Deploy Sourcegraph on Google Cloud Platform](../../install/docker/google_cloud)
+- [Deploy Sourcegraph on Google Cloud Platform](../../install/docker/google_cloud.md)
 - [Deploy Sourcegraph on Digital Ocean](../../install/docker/digitalocean.md)
 
 ## File system performance on Docker for Mac
@@ -41,7 +41,7 @@ There is a [known issue](https://github.com/docker/for-mac/issues/77) in Docker 
 
 To achieve better performance, you can do any of the following:
 
-- For better clone performance, clone the repository on your host machine and then [add it to Sourcegraph Server](../../repo/add#add-repositories-already-cloned-to-disk).
+- For better clone performance, clone the repository on your host machine and then [add it to Sourcegraph Server](../../repo/add.md#add-repositories-already-cloned-to-disk).
 - Try adding the `:delegated` suffix the data volume mount. [Learn more](https://github.com/docker/for-mac/issues/1592).
   ```
   --volume ~/.sourcegraph/data:/var/opt/sourcegraph:delegated

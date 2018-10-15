@@ -1,3 +1,3 @@
 # Repositories
 
-See [documentation on adding repositories](add).
+See [documentation on adding repositories](add.md).

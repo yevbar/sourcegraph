@@ -125,4 +125,4 @@ If you followed the instructions above, the addresses and port numbers for all l
 
 ## Next steps
 
-To get code intelligence on your code host and/or code review tool, see the [browser extension documentation](../../../integration/browser_extension).
+To get code intelligence on your code host and/or code review tool, see the [browser extension documentation](../../../integration/browser_extension.md).

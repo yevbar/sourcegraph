@@ -62,7 +62,7 @@ This applies to you if you see the following warning on the **Admin > Code intel
 
 ### Option A: Continue using manual code intelligence installation
 
-Just as before July 30, 2018, you can continue manually managing code intelligence for your Sourcegraph instance if you prefer. The instructions for this have [moved here](../../../extensions/language_servers/install/google_cloud).
+Just as before July 30, 2018, you can continue manually managing code intelligence for your Sourcegraph instance if you prefer. The instructions for this have [moved here](../../../extensions/language_servers/install/google_cloud.md).
 
 ### Option B (recommended): Upgrade to the new automatic code intelligence
 

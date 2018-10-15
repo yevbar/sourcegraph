@@ -6,7 +6,7 @@ This page describes additional configuration that may be needed for Java code in
 
 ## Cross-repository code intelligence
 
-Jump-to-definition and find-references actions in Sourcegraph are source-to-source. When a user performs a jump-to-def to a dependency or a find-references in external repositories, they will navigate to the original source (rather than a decompiled `.class` file). In order for this to work, the source of the dependency or dependee must be available on your Sourcegraph instance. Refer to the [instructions for adding repositories](../../../admin/repo/add).
+Jump-to-definition and find-references actions in Sourcegraph are source-to-source. When a user performs a jump-to-def to a dependency or a find-references in external repositories, they will navigate to the original source (rather than a decompiled `.class` file). In order for this to work, the source of the dependency or dependee must be available on your Sourcegraph instance. Refer to the [instructions for adding repositories](../../../admin/repo/add.md).
 
 In addition to your organization's repositories and your open-source dependencies, it is also common to add the following repositories (or forks thereof):
 
